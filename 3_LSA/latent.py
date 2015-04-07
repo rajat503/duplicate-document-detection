@@ -53,17 +53,6 @@ class LSA:
 
             return( dot(sk,sigmak), transpose(dot(sigmak,utk)))
 
-    def show(self):
-        import matplotlib.pyplot as plt
-        plt.axis([-4, 4, -4, 4])
-        terms, docs = self.lsaTransform(2)
-        for t, label in zip(terms,self.termslabel):
-            plt.text(t[0],t[1],label)
-
-        for d,label in  zip(docs,self.docslabel):
-            plt.text(d[0],d[1],label)
-
-        plt.show()
 
 
 if __name__ == '__main__':
@@ -122,7 +111,6 @@ if __name__ == '__main__':
     # for i in terms:
     #     print i
 
-    lsa.show()
 
     centroid, labels = kmeans2(terms, number_of_clusters, iter=10, thresh=1e-05, minit='random', missing='warn')
 
