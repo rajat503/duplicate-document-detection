@@ -15,22 +15,6 @@ class LSA:
         self.matrix = array(matrix)
         self.termslabel = termslabel
         self.docslabel = docslabel
- 
-    def __repr__(self,):
-
-        stringRepresentation=""
-  
-        rows,cols = self.matrix.shape
-      
-        for row in xrange(0,rows):
-            stringRepresentation += "["
-  
-            for col in xrange(0,cols):
-                stringRepresentation+= "%+0.2f "%self.matrix[row][col]
-            stringRepresentation += "]\n"
-  
-        return stringRepresentation
-  
   
     
   
