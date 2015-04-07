@@ -1,0 +1,10 @@
+patience
+country
+act
+form
+g
+attempts
+board
+
+dl
+followers
